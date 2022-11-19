@@ -1,5 +1,23 @@
 @extends('frontEnd.master')
 
+@section('hero-section')
+
+
+    <section id="hero-animated" class="hero-animated d-flex align-items-center">
+        <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative" data-aos="zoom-out">
+            <img src="{{ asset('frontEndAssets') }}/assets/img/hero-carousel/hero-carousel-3.svg" class="img-fluid animated">
+            <h2>Welcome to <span>HeroBiz</span></h2>
+            <p>Et voluptate esse accusantium accusamus natus reiciendis quidem voluptates similique aut.</p>
+            <div class="d-flex">
+                <a href="#about" class="btn-get-started scrollto">Get Started</a>
+                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+            </div>
+        </div>
+    </section>
+
+@endsection
+
+
 @section('content')
 
 <!-- ======= Featured Services Section ======= -->
@@ -1067,7 +1085,7 @@
                     </div>
                     <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit</h3>
                     <p>Illum voluptas ab enim placeat. Adipisci enim velit nulla. Vel omnis laudantium. Asperiores eum ipsa est officiis. Modi cupiditate exercitationem qui magni est...</p>
-                    <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                    <a href="{{ url('blog-details') }}" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
                 </div>
             </div>
 
@@ -1080,7 +1098,7 @@
                     </div>
                     <h3 class="post-title">Et repellendus molestiae qui est sed omnis voluptates magnam</h3>
                     <p>Voluptatem nesciunt omnis libero autem tempora enim ut ipsam id. Odit quia ab eum assumenda. Quisquam omnis aliquid necessitatibus tempora consectetur doloribus...</p>
-                    <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                    <a href="{{ url('blog-details') }}" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
                 </div>
             </div>
 
@@ -1093,7 +1111,7 @@
                     </div>
                     <h3 class="post-title">Quia assumenda est et veritatis aut quae</h3>
                     <p>Quia nam eaque omnis explicabo similique eum quaerat similique laboriosam. Quis omnis repellat sed quae consectetur magnam veritatis dicta nihil...</p>
-                    <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                    <a href="{{ url('blog-details') }}" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
                 </div>
             </div>
 

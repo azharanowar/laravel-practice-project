@@ -19,3 +19,7 @@ use App\Http\Controllers\HomeController;
 //});
 
 Route::get('/', [HomeController::class, 'index']);
+
+Route::get('/blog', [HomeController::class, 'blogPage']);
+
+Route::get('/blog-details', [HomeController::class, 'blogDetails']);
